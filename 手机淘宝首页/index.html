@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>淘宝网触屏版</title>
+        <link rel="stylesheet" href="tsrc/css/font.css">
+        <link rel="stylesheet" href="index.css">
+</head>
+<body>
+        <div class="header">
+           <a href="#"><input type="text"><i class="icon">&#xE600;&nbsp;&nbsp;&nbsp;&nbsp;寻&nbsp;找&nbsp;宝&nbsp;贝&nbsp;店&nbsp;铺</i></a>
+        </div>
+        <div class="banner">
+                <ul>
+                   <li><img src="tsrc/images/b1.jpg" alt="" id="a1"></li>
+                   <li><img src="tsrc/images/b2.jpg" alt="" id="a2"></li>      
+                </ul>
+                <div class="an1" onclick="getElementById("a1").style.z-index='99'" onmouseout="getElementById("a1").style.z-index='2'"></div>
+                <div class="an2" onclick="getElementById("a2").style.z-index='99'" onmouseout="getElementById("a2").style.z-index='2'"></div>
+        </div>
+        <div class="nav">
+                <ul>
+                        <li><a href="#"><img src="tsrc/images/c1.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c2.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c3.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c4.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c5.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c6.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c7.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c8.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c9.png" alt=""><span>天猫</span></a></li>
+                        <li><a href="#"><img src="tsrc/images/c10.png" alt=""><span>天猫</span></a></li>
+                </ul>
+        </div>  
+        <div class="footer">
+                <ul>
+                        <li>天猫必备</li>
+                        <li><img src="tsrc/images/g1.png" alt=""></li>
+                        <li><img src="tsrc/images/g2.png" alt=""></li>
+                        <li><img src="tsrc/images/g3.png" alt=""></li>
+                        <li><img src="tsrc/images/g4.jpg" alt=""></li>
+                        <li><img src="tsrc/images/g5.jpg" alt=""></li>
+                        <li><img src="tsrc/images/g6.jpg" alt=""></li>
+                </ul>
+        </div>
+        <div class="menu">
+                <ul>
+                        <li><i class="icon">&#xE601;</i><span>首页</span></li>
+                        <li><i class="icon">&#xE602;</i><span>物流</span></li>
+                        <li><i class="icon">&#xE604;</i><span>购物车</span></li>
+                        <li><i class="icon">&#xE605;</i><span>我的淘宝</span></li>
+                        <li><i class="icon">&#xE606;</i><span></span></li>
+                </ul>
+        </div>  
+	<script>
+                (function(win,doc){
+                        var fresh = function(){
+                                var html = doc.documentElement;
+                                var w = html.clientWidth;
+                                html.style.fontSize = (w/10) + 'px';
+                        }
+                        if(doc.readySate === 'complete'){
+                                fresh();
+                        }else{
+                                doc.addEventListener("DOMContentLoad",fresh,false);
+                        }
+                        win.addEventListener("resize",fresh,false);
+                })(window,document)
+        </script>
+</body>
+</html>
